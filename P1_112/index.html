@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+
+    <h1>Personal Details</h1>
+    <div >
+        <form action="" method="get" id="form">
+        <label for="Name">Name: <input type="text" id="name"></label>
+        <label for="Password"> Password: <input type="password" name="" id="password"></label>
+        <label for="mail">E-mail: <input type="email" name="" id="mail"> </label>
+        <div>
+            <label for="gender" id="gender">Gender</label>
+            <label for="male" id="male">Male</label><input type="radio" name="gender" id="male">
+            <label for="female" id="female">Female</label><input type="radio" name="gender" id="female">
+        </div>
+    <label for="contact"> Contact : <input type="number" name="" id="number"></label>
+
+
+    </form>
+    </div>
+
+    <div id="main"></div>
+    <button id="button" onclick="display(event)">Submit</button>
+<script src="script.js"></script>  
+</body>
+</html>
