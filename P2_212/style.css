@@ -77,15 +77,10 @@ section{
 }
 
 #list{
-    display: flex;
-    flex-direction: column;
-    /* padding: 15px 25px; */
-    /* margin-top: 1rem; */
-    /* margin-left: 1rem; */
-    gap: 0.5rem;
-    list-style: none;
+    display: inline;
     
 }
+
 #list a{
     color: #000;
     margin-left: 1rem;
@@ -120,12 +115,12 @@ section{
     flex-direction: row;
     /* justify-content: space-around; */
     gap: 3rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 .card{
     display: inline;
-    height: 200px;
-    width: 200px;
+    height: 12em;
+    width: 10em;
     background-color: #fff;
     border: 1px solid #f8f8f4;
     border-radius: 10px;
@@ -147,22 +142,31 @@ section{
     font-weight: 500;
 }
 .card img{
-    height: 130px;
+    height: 6em;
     padding: 10px;
-    width: 160px;
+    width: 10em;
+}
+.main1 .link1{
+    display: flex;
+    flex-direction: column;
 }
 .links{
+    display: flex;
+    gap: 2rem;
+    
+}
+.link1{
     display: flex;
     flex-direction: row;
     /* justify-content: space-around; */
     gap: 3rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .link{
     display: inline;
-    height: 250px;
-    width: 250px;
+    height: 13em;
+    width: 12em;
     background-color: #fff;
     border: 1px solid #f8f8f4;
     border-radius: 10px;
@@ -170,8 +174,8 @@ section{
 }
 
 .link img{
-    width: 240px;
-    height: 250px;
+    width: 13em;
+    height: 12em;
 }
 footer{
     background-color: rgb(255, 150, 31);
@@ -216,11 +220,42 @@ footer h3{
     font-size: 1.2rem;
 }
 @media (max-width:500px) {
+    #logo{
+        height: 2rem;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    #heading{
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+    #para{
+        font-size: 0.9rem;
+        margin-top: 1.6rem;
+    }
+    .cards{
+        margin: 1.2rem;
+    }
+    .headerRight{
+        gap: 0.5rem;
+        margin-top: 10px;
+    }
+    nav{
+        font-size: 0.8rem;
+        gap: 1rem;
+    }
     footer{
         display: none;
     }
     .menu .ham{
 display: block;
+margin-left: 2rem;
+}
+#dmt{
+    height: 3rem;
+    width: 3rem;
 }
 .navbar{
     display: flex;
@@ -231,16 +266,54 @@ display: block;
 .sidebar{
     display: none;
 }
-img{
-    width: 100%;
-    height: auto;
+.headerRight img{
+    height: 0.5rem;
+
 }
+.card{
+    height: 3rem;
+    width: 3rem;
+    line-height: 1rem;
+}
+.card img{
+    height: 3rem;
+    width: 3em;
+}
+
+#text{
+    font-size: 10px;
+    line-height: 2px;
+}
+
+.link{
+    height: 3.5rem;
+    width: 3.5rem;
+    line-height: 1rem;
+}
+.links{
+    gap: 10px;
+}
+.link img{
+    height: 3.5rem;
+    width: 3.5rem;
+}
+.link1{
+    margin-top: 10px;
+}
+
+
+.main div{
+    /* line-height: 1rem; */
+    margin-top: 5px;
+}
+
 }
 
 @media (max-width:900px){
 
     .menu .ham{
 display: block;
+margin-left: 2rem;
 }
 .navbar{
     display: flex;
@@ -251,6 +324,81 @@ display: block;
 .sidebar{
     display: none;
 }
+
+#logo{
+        height: 3.2rem;
+    }
+    header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #heading{
+        font-size: 1.5rem;
+        margin-top: 2.5rem;
+    }
+    #para{
+        font-size: 1.1rem;
+        margin-top: 2rem;
+    }
+    .cards{
+        margin: 2rem;
+    }
+    .headerRight{
+        gap: 1rem;
+        margin-top: 10px;
+    }
+    nav{
+        font-size: 0.8rem;
+        gap: 1rem;
+    }
+    footer{
+        display: flex;
+    }
+    .footer1{
+        display: none;
+    }
+    .footer2{
+        display: none;
+    }
+    .footer3{
+        display: flex;
+    }
+    .headerRight img{
+    height: 1rem;
+
+}
+.card{
+    height: 5rem;
+    width: 5rem;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+.card img{
+    height: 5rem;
+    width: 5em;
+}
+.cards{
+    gap: 1.5rem;
+}
+#text{
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.link{
+    height: 6rem;
+    width: 6rem;
+    line-height: 1.8rem;
+}
+.links{
+    gap: 2rem;
+}
+.link img{
+    height: 6rem;
+    width: 6rem;
+}
+
+
 
 
 }
