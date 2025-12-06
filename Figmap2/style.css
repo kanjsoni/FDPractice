@@ -13,6 +13,16 @@
     background: #000;
 }
 
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -0.5rem;
+}
+
+.header img{
+    height: 1.2rem;
+}
+
 .card1{
     background-color: #fffffa;
 }
@@ -22,7 +32,7 @@
     margin-bottom: 10px;
 }
 .card{
-    height: 650px;
+    height: 700px;
     border: 2px solid rgba(0, 0, 0, 0.1);
     width: 350px;
     background-color: #fff;
@@ -41,33 +51,78 @@
     flex-direction: row;
     justify-content: space-evenly;
     background-color: #fff;
-    border-radius: 25px;
+    background-color: blue;
 }
 
 
 #btn1{
     color: #fff;
-    background-color: #40409b;
     font-size: 12px;
-    padding: 10px 15px;
+    background-color:blue;
+    padding: 10px 35px;
     text-align: center;
-    border-radius: 25px;
-    width: 100px;
-    border: none;
-    margin: 5px;
-    margin-left: -2.5rem;
+    border-bottom: 2px solid rgb(5, 242, 5);
+    border-left: none;
+    border-right: none;
+    border-top: none;
     font-weight: 600;
 }
 #btn2{
-    color: blue;
-    background: transparent;
+    color: rgb(255, 255, 255);
+    background-color: blue;
     font-size: 12px;
     padding: 10px 15px;
     text-align: center;
-    border-radius: 25px;
     border: none;
     font-weight: 900;
+    width: 200px;
 
+}
+
+#note{
+    background-color: #fff;
+    color: #000;
+    font-size: 0.8rem;
+    text-align: center;
+    width: 230px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: -1rem;
+    margin-left: 2rem;
+    padding: 5px;
+}
+.button1{
+    margin-top: 1rem;
+    width: 265px;
+    margin-left: 1rem;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background: #f9f8f8;
+}
+
+#upi{
+    font-size: 10px;
+    color: #000;
+    font-weight: 700;
+    background:transparent;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+#upiId{
+    background-color: rgb(70, 70, 179);
+    font-size: 10px;
+    color: #f9f8f8;
+    font-weight: 700;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: none;
+    margin-right: -2rem;
+    cursor: pointer;
 }
 
 .qr{
@@ -115,37 +170,7 @@
     font-size: 1.3rem;
 }
 
-.button1{
-    border-radius: 25px;
-    margin: 2rem;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    background: #f9f8f8;
-}
 
-#upi{
-    font-size: 10px;
-    color: #000;
-    font-weight: 700;
-    background:transparent;
-    padding: 10px 15px;
-    border-radius: 25px;
-    border: none;
-    cursor: pointer;
-}
-
-#upiId{
-    background-color: rgb(70, 70, 179);
-    font-size: 10px;
-    color: #f9f8f8;
-    font-weight: 700;
-    padding: 10px 15px;
-    border-radius: 25px;
-    border: none;
-    margin-right: -2rem;
-    cursor: pointer;
-}
 #save{
     font-size: 1rem;
     text-align: center;
@@ -210,6 +235,20 @@
 
 
 }
+#claim{
+    padding: 5px 25px;
+    color: #101010;
+    background-color: #fcfcfc;
+    border-radius: 25px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 2px solid blue;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 2rem;
+    cursor: pointer;
+    width: 250px;
+}
 #para1{
     text-align: center;
     font-size: 10px;
@@ -231,5 +270,12 @@ a{
 }
 
 #logo{
-    margin-left: 10rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#logo img{
+    height: 1.3rem;
+    
 }
