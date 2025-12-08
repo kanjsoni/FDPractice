@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.box{
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem;
+    flex-wrap: wrap;
+}
+.rect{
+    height: 200px;
+    width: 300px;
+    background: linear-gradient(45deg, red, blue);
+    border: 2px solid black;
+}
+
+.circle{
+    height: 250px;
+    width: 250px;
+    background: linear-gradient(60deg, yellow, orange);
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.semicircle{
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(60deg, rgb(113, 113, 2), rgb(205, 146, 36));
+    border: 2px solid black;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.curve{
+    height: 180px;
+    width: 200px;
+    background: linear-gradient(75deg, pink, purple);
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.u-line{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    background: linear-gradient(120deg, yellow, blue);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50% ;
+    border-top: none;
+}
+
+.parallelogram{
+    height: 150px;
+    width: 200px;
+    border: 2px solid black;
+    transform: skew(-20deg);
+    background: linear-gradient(45deg, #878374, #783783);
+}
+.line{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    transform: rotate(45deg);
+    background: linear-gradient(90deg, white, rgb(244, 244, 243));
+    border-top: none;
+    border-left: none;
+}
+
+.triangle{
+    height: 0;
+    width: 0; 
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 100px solid #b4a366;
+
+}
+
+.triangle-down{
+    height: 0;
+    width: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 100px solid #789789;
+}
+
+
+
